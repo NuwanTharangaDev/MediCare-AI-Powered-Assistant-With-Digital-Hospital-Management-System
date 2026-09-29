@@ -1,0 +1,742 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin"
+    },
+    {
+      "id": 2,
+      "name": "doctor"
+    },
+    {
+      "id": 3,
+      "name": "patient"
+    },
+    {
+      "id": 4,
+      "name": "nurse"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Lakmal Perera",
+      "email": "admin@medicare.com",
+      "password": "admin123",
+      "role_id": 1,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150",
+      "created_at": "2026-07-12T20:16:33.746Z"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sarath Jayasekara",
+      "email": "sarath@medicare.com",
+      "password": "doctor123",
+      "role_id": 2,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 3,
+      "name": "Patient Oshan Perera",
+      "email": "oshan@medicare.com",
+      "password": "patient123",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 4,
+      "name": "Nurse Amaya Perera",
+      "email": "amaya@medicare.com",
+      "password": "nurse123",
+      "role_id": 4,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 5,
+      "name": "Nimal Perera",
+      "email": "nimal@example.com",
+      "password": "password123",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 6,
+      "name": "Sanduni Silva",
+      "email": "sanduni@example.com",
+      "password": "password123",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 7,
+      "name": "Kavindu Fernando",
+      "email": "kavindu@example.com",
+      "password": "password123",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 8,
+      "name": "Chamika Jayawardena",
+      "email": "chamika@example.com",
+      "password": "password123",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150",
+      "created_at": "2026-07-12T20:16:33.748Z"
+    },
+    {
+      "id": 9,
+      "name": "janidhu kavishka",
+      "email": "janidhu25kavishka@gmail.com",
+      "password": "janidhu1234",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150",
+      "created_at": "2026-07-13T06:41:15.571Z"
+    },
+    {
+      "id": 10,
+      "name": "janidhu kavishka",
+      "email": "janidhu25kavishka@gmail.com",
+      "password": "janidhu1234",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150",
+      "created_at": "2026-07-13T06:44:51.333Z"
+    },
+    {
+      "name": "Nuwan Tharanga",
+      "email": "nuwan25tharanga@gmail.com",
+      "password": "22sea011nt",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150"
+    },
+    {
+      "name": "Tharanga",
+      "email": "Gayan25tharanga@gmail.com",
+      "password": "22sea012",
+      "role_id": 3,
+      "status": "Active",
+      "profile_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Cardiology",
+      "head_doctor_id": 1,
+      "room_count": 15,
+      "staff_count": 8,
+      "description": "Specialized care for heart, blood vessels and advanced cardiology surgery."
+    },
+    {
+      "id": 2,
+      "name": "Neurology",
+      "head_doctor_id": null,
+      "room_count": 12,
+      "staff_count": 6,
+      "description": "Expert diagnosis and therapy for brain, spine and central nervous system disorders."
+    },
+    {
+      "id": 3,
+      "name": "Pediatrics",
+      "head_doctor_id": null,
+      "room_count": 20,
+      "staff_count": 14,
+      "description": "Comprehensive healthcare services for newborns, infants, children and teens."
+    },
+    {
+      "id": 4,
+      "name": "Orthopedics",
+      "head_doctor_id": null,
+      "room_count": 18,
+      "staff_count": 10,
+      "description": "Advanced bone, joint, muscle repairs and physiotherapy procedures."
+    },
+    {
+      "id": 5,
+      "name": "Emergency",
+      "head_doctor_id": null,
+      "room_count": 30,
+      "staff_count": 25,
+      "description": "24/7 highly equipped trauma and critical immediate care unit."
+    },
+    {
+      "id": 6,
+      "name": "ICU",
+      "head_doctor_id": null,
+      "room_count": 10,
+      "staff_count": 15,
+      "description": "Intensive care unit tracking and stabilizing unstable critical patients."
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "name": "Dr. Sarath Jayasekara",
+      "department_id": 1,
+      "specialization": "Cardiologist",
+      "experience": 12,
+      "availability": "Available",
+      "contact": "0771234567",
+      "rating": 4.9,
+      "bio": "Experienced cardiologist specializing in clinical cardiology, vascular disease treatments, and critical care.",
+      "qualification": "MD, FACC, Board Certified Cardiologist",
+      "consultation_hours": "08:00 AM - 04:00 PM"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "name": "Oshan Perera",
+      "age": 28,
+      "gender": "Male",
+      "address": "123 Highlevel Road, Homagama",
+      "phone": "0711122334",
+      "email": "oshan@medicare.com",
+      "blood_group": "A+",
+      "allergies": "Dust, Penicillin",
+      "chronic_conditions": "None",
+      "emergency_contact": "Kavindu Perera (Brother) - 0719876543",
+      "status": "Admitted",
+      "assigned_doctor_id": 1
+    },
+    {
+      "id": 2,
+      "user_id": 5,
+      "name": "Nimal Perera",
+      "age": 45,
+      "gender": "Male",
+      "address": "45 Galle Road, Colombo",
+      "phone": "0777123456",
+      "email": "nimal@example.com",
+      "blood_group": "O+",
+      "allergies": "None",
+      "chronic_conditions": "Hypertension",
+      "emergency_contact": "Priyanthi Perera (Wife) - 0777112233",
+      "status": "Admitted",
+      "assigned_doctor_id": 1
+    },
+    {
+      "id": 3,
+      "user_id": 6,
+      "name": "Sanduni Silva",
+      "age": 32,
+      "gender": "Female",
+      "address": "78 Kandy Road, Kadawatha",
+      "phone": "0714567890",
+      "email": "sanduni@example.com",
+      "blood_group": "B-",
+      "allergies": "Sulfa Drugs",
+      "chronic_conditions": "Asthma",
+      "emergency_contact": "Sunil Silva (Father) - 0714445566",
+      "status": "Discharged",
+      "assigned_doctor_id": 1
+    },
+    {
+      "id": 4,
+      "user_id": 7,
+      "name": "Kavindu Fernando",
+      "age": 29,
+      "gender": "Male",
+      "address": "12 Negombo Road, Wattala",
+      "phone": "0751234567",
+      "email": "kavindu@example.com",
+      "blood_group": "AB+",
+      "allergies": "Peanuts",
+      "chronic_conditions": "None",
+      "emergency_contact": "Nishanthi Fernando (Mother) - 0759998877",
+      "status": "Emergency",
+      "assigned_doctor_id": 1
+    },
+    {
+      "id": 5,
+      "user_id": 8,
+      "name": "Chamika Jayawardena",
+      "age": 55,
+      "gender": "Male",
+      "address": "89 Highlevel Road, Nugegoda",
+      "phone": "0729876543",
+      "email": "chamika@example.com",
+      "blood_group": "O-",
+      "allergies": "Aspirin",
+      "chronic_conditions": "Diabetes",
+      "emergency_contact": "Dilini Jayawardena (Daughter) - 0725556677",
+      "status": "Admitted",
+      "assigned_doctor_id": 1
+    },
+    {
+      "id": 6,
+      "user_id": 9,
+      "name": "janidhu kavishka",
+      "age": 25,
+      "gender": "Male",
+      "address": "611/D udagewatta, Meegoda",
+      "phone": "0743454881",
+      "email": "janidhu25kavishka@gmail.com",
+      "blood_group": "A+",
+      "allergies": "no",
+      "chronic_conditions": "Hypertention",
+      "emergency_contact": "0771976718",
+      "status": "Discharged",
+      "assigned_doctor_id": null
+    },
+    {
+      "id": 7,
+      "user_id": 10,
+      "name": "janidhu kavishka",
+      "age": 25,
+      "gender": "Male",
+      "address": "611/D udagewatta, Meegoda",
+      "phone": "0743454881",
+      "email": "janidhu25kavishka@gmail.com",
+      "blood_group": "A+",
+      "allergies": "no",
+      "chronic_conditions": "Hypertention",
+      "emergency_contact": "0771976718",
+      "status": "Discharged",
+      "assigned_doctor_id": null
+    },
+    {
+      "user_id": 10,
+      "name": "Nuwan Tharanga",
+      "age": 26,
+      "gender": "Male",
+      "address": "Colombo rd, Homagama",
+      "phone": "0771976719",
+      "email": "nuwan25tharanga@gmail.com",
+      "blood_group": "A+",
+      "allergies": "Dust",
+      "chronic_conditions": "Hypertention",
+      "emergency_contact": "0771976719",
+      "status": "Discharged",
+      "assigned_doctor_id": null
+    },
+    {
+      "user_id": 10,
+      "name": "Tharanga",
+      "age": 25,
+      "gender": "Male",
+      "address": "Colombo rd , maharagama",
+      "phone": "0771976868",
+      "email": "Gayan25tharanga@gmail.com",
+      "blood_group": "A+",
+      "allergies": "Dust",
+      "chronic_conditions": "Hypertenstion",
+      "emergency_contact": "0771976719",
+      "status": "Discharged",
+      "assigned_doctor_id": null
+    }
+  ],
+  "nurses": [
+    {
+      "id": 1,
+      "user_id": 4,
+      "name": "Nurse Amaya Perera",
+      "employee_id": "NUR-2024-0091",
+      "department_id": 1,
+      "qualification": "BSc. in Nursing, Registered Nurse (RN)",
+      "experience": 5,
+      "contact": "0779876543"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "doctor_id": 1,
+      "date": "2026-05-31",
+      "time": "10:00:00",
+      "status": "Upcoming",
+      "payment_status": "Paid",
+      "type": "Consultation",
+      "notes": "Regular follow-up consultation on cardiology progress.",
+      "department_id": 1
+    },
+    {
+      "id": 2,
+      "patient_id": 2,
+      "doctor_id": 1,
+      "date": "2026-05-30",
+      "time": "09:00:00",
+      "status": "Completed",
+      "payment_status": "Paid",
+      "type": "Follow-up Visit",
+      "notes": "Check blood pressure levels and adjust heart medication.",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "patient_id": 3,
+      "doctor_id": 1,
+      "date": "2026-05-30",
+      "time": "11:00:00",
+      "status": "Pending",
+      "payment_status": "Pending",
+      "type": "ECG Test",
+      "notes": "Standard electrocardiogram scan for chest pains.",
+      "department_id": 1
+    },
+    {
+      "id": 4,
+      "patient_id": 4,
+      "doctor_id": 1,
+      "date": "2026-05-30",
+      "time": "10:00:00",
+      "status": "Confirmed",
+      "payment_status": "Paid",
+      "type": "Consultation",
+      "notes": "Emergency follow up regarding acute hypertension.",
+      "department_id": 1
+    },
+    {
+      "id": 5,
+      "patient_id": 5,
+      "doctor_id": 1,
+      "date": "2026-05-30",
+      "time": "14:00:00",
+      "status": "Confirmed",
+      "payment_status": "Paid",
+      "type": "Consultation",
+      "notes": "Diabetic neuropathy review and health checks.",
+      "department_id": 1
+    }
+  ],
+  "billing": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "invoice_id": "INV-2026-001",
+      "date": "2026-05-30",
+      "amount": 2500,
+      "status": "Paid",
+      "insurance_claims": "None",
+      "payment_history": "Paid via Visa card ending in 4522 on 2026-05-30."
+    },
+    {
+      "id": 2,
+      "patient_id": 2,
+      "invoice_id": "INV-2026-002",
+      "date": "2026-05-28",
+      "amount": 5000,
+      "status": "Paid",
+      "insurance_claims": "Ceylinco Life (70%)",
+      "payment_history": "Paid client co-payment via cash. Insurance claimed successfully."
+    },
+    {
+      "id": 3,
+      "patient_id": 3,
+      "invoice_id": "INV-2026-003",
+      "date": "2026-05-30",
+      "amount": 1500,
+      "status": "Pending",
+      "insurance_claims": "None",
+      "payment_history": "Invoice generated. Pending online portal payment."
+    },
+    {
+      "id": 4,
+      "patient_id": 4,
+      "invoice_id": "INV-2026-004",
+      "date": "2026-05-29",
+      "amount": 10000,
+      "status": "Paid",
+      "insurance_claims": "AIA Insurance (100%)",
+      "payment_history": "Direct insurance billing settlement completed on 2026-05-29."
+    }
+  ],
+  "medical_records": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "record_name": "Cardiovascular Screening Report",
+      "date": "2026-05-13",
+      "doctor_id": 1,
+      "status": "Final",
+      "file_url": "#",
+      "diagnosis": "Slightly elevated cardiovascular pressure. Standard cholesterol levels.",
+      "treatment": "Moderate workout regimen, diet adjustments, Lipitor 10mg daily.",
+      "notes": "Patient feels healthy. Follow up scheduled in two weeks."
+    },
+    {
+      "id": 2,
+      "patient_id": 2,
+      "record_name": "ECG Scan and Heartbeat Trace",
+      "date": "2026-05-10",
+      "doctor_id": 1,
+      "status": "Final",
+      "file_url": "#",
+      "diagnosis": "Normal sinus rhythm with mild sinus arrhythmia.",
+      "treatment": "Continue regular heart support medication. Limit caffeinated intake.",
+      "notes": "Report printed and handed over to family member."
+    }
+  ],
+  "medications": [
+    {
+      "id": 1,
+      "name": "Atorvastatin (Lipitor)",
+      "description": "Cholesterol lowering drug.",
+      "dosage_form": "Tablet",
+      "standard_dosage": "10mg once daily at night"
+    },
+    {
+      "id": 2,
+      "name": "Metformin (Glucophage)",
+      "description": "Oral diabetes medicine that helps control blood sugar levels.",
+      "dosage_form": "Tablet",
+      "standard_dosage": "500mg twice daily with meals"
+    },
+    {
+      "id": 3,
+      "name": "Lisinopril (Zestril)",
+      "description": "ACE inhibitor used to treat high blood pressure.",
+      "dosage_form": "Tablet",
+      "standard_dosage": "10mg once daily in the morning"
+    },
+    {
+      "id": 4,
+      "name": "Amoxicillin (Amoxil)",
+      "description": "Penicillin-type antibiotic used to treat bacterial infections.",
+      "dosage_form": "Capsule",
+      "standard_dosage": "500mg three times daily for 7 days"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "sender_id": 3,
+      "receiver_id": 2,
+      "content": "Good morning Doctor Sarath, I wanted to double check my follow-up time.",
+      "timestamp": "2026-05-30T08:30:00.000Z",
+      "voice_url": null,
+      "file_url": null,
+      "is_emergency": false
+    },
+    {
+      "id": 2,
+      "sender_id": 2,
+      "receiver_id": 3,
+      "content": "Hello Oshan, yes your follow-up appointment is set for tomorrow at 10:00 AM in cardiology room 101.",
+      "timestamp": "2026-05-30T08:45:00.000Z",
+      "voice_url": null,
+      "file_url": null,
+      "is_emergency": false
+    },
+    {
+      "id": 3,
+      "sender_id": 4,
+      "receiver_id": 2,
+      "content": "Dr. Sarath, patient Nimal Perera in room 102 has high blood pressure of 160/95. Please advise.",
+      "timestamp": "2026-05-30T09:15:00.000Z",
+      "voice_url": null,
+      "file_url": null,
+      "is_emergency": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "message": "Your appointment with Dr. Sarath Jayasekara has been scheduled for May 31 at 10:00 AM.",
+      "is_read": false,
+      "timestamp": "2026-05-30T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "message": "New consultation scheduled: Oshan Perera tomorrow at 10:00 AM.",
+      "is_read": false,
+      "timestamp": "2026-05-30T08:05:00.000Z"
+    },
+    {
+      "id": 3,
+      "user_id": 4,
+      "message": "Shift alert: Urgent patient admission in Room 106. Please review tasks.",
+      "is_read": false,
+      "timestamp": "2026-05-30T08:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "user_id": 9,
+      "message": "Welcome to Medicare Hospital, janidhu kavishka! Your account has been created successfully.",
+      "is_read": false,
+      "timestamp": "2026-07-13T06:41:15.576Z"
+    },
+    {
+      "id": 5,
+      "user_id": 10,
+      "message": "Welcome to Medicare Hospital, janidhu kavishka! Your account has been created successfully.",
+      "is_read": false,
+      "timestamp": "2026-07-13T06:44:51.335Z"
+    },
+    {
+      "user_id": 10,
+      "message": "Welcome to Medicare Hospital, Nuwan Tharanga! Your account has been created successfully."
+    },
+    {
+      "user_id": 10,
+      "message": "Welcome to Medicare Hospital, Tharanga! Your account has been created successfully."
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "doctor_id": 1,
+      "date": "2026-05-13",
+      "follow_up_date": "2026-05-31",
+      "instructions": "Please ensure you take medicines strictly after meals and monitor your heart rate regularly.",
+      "signature_url": "Dr. Sarath Jayasekara Digital Sig"
+    }
+  ],
+  "prescription_items": [
+    {
+      "id": 1,
+      "prescription_id": 1,
+      "medicine": "Atorvastatin (Lipitor)",
+      "dosage": "10mg",
+      "duration": "30 Days",
+      "frequency": "Once daily at night"
+    },
+    {
+      "id": 2,
+      "prescription_id": 1,
+      "medicine": "Lisinopril (Zestril)",
+      "dosage": "10mg",
+      "duration": "30 Days",
+      "frequency": "Once daily in the morning"
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "category": "Revenue Reports",
+      "title": "Hospital Monthly Earnings - May 2026",
+      "created_at": "2026-07-12T20:16:33.748Z",
+      "created_by": 1,
+      "filepath": "#",
+      "data": "{\"total_revenue\": 1450000.00, \"growth_percentage\": 12.5}"
+    },
+    {
+      "id": 2,
+      "category": "Patient Reports",
+      "title": "Patient Admissions and Discharge Rates",
+      "created_at": "2026-07-12T20:16:33.748Z",
+      "created_by": 1,
+      "filepath": "#",
+      "data": "{\"total_admissions\": 542, \"critical_patients\": 24}"
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "key_name": "hospital_name",
+      "val_value": "MediCare Hospital",
+      "category": "General"
+    },
+    {
+      "id": 2,
+      "key_name": "hospital_logo",
+      "val_value": "default_logo.png",
+      "category": "General"
+    },
+    {
+      "id": 3,
+      "key_name": "hospital_address",
+      "val_value": "123 Highlevel Road, Homagama",
+      "category": "General"
+    },
+    {
+      "id": 4,
+      "key_name": "hospital_contact",
+      "val_value": "0112752049",
+      "category": "General"
+    },
+    {
+      "id": 5,
+      "key_name": "sms_notifications",
+      "val_value": "Enabled",
+      "category": "System"
+    },
+    {
+      "id": 6,
+      "key_name": "email_notifications",
+      "val_value": "Enabled",
+      "category": "System"
+    },
+    {
+      "id": 7,
+      "key_name": "dark_mode",
+      "val_value": "Disabled",
+      "category": "Appearance"
+    },
+    {
+      "id": 8,
+      "key_name": "theme_color",
+      "val_value": "Blue",
+      "category": "Appearance"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "task_name": "Check Vital Signs",
+      "patient_id": 2,
+      "room": "Room 101",
+      "priority": "High",
+      "status": "Completed",
+      "assigned_to_nurse_id": 1,
+      "notes": "Check blood pressure, pulse, and oxygen saturation. Note down on shift file.",
+      "reminder_time": "2026-05-30T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "task_name": "Medication Administration",
+      "patient_id": 1,
+      "room": "Room 102",
+      "priority": "High",
+      "status": "Pending",
+      "assigned_to_nurse_id": 1,
+      "notes": "Administer heart pills Zestril 10mg. Patient needs post-meal support.",
+      "reminder_time": "2026-05-30T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "task_name": "Blood Test Collection",
+      "patient_id": 3,
+      "room": "Room 103",
+      "priority": "Medium",
+      "status": "Pending",
+      "assigned_to_nurse_id": 1,
+      "notes": "Collect blood samples for full count profile (FBC) test and send to lab.",
+      "reminder_time": "2026-05-30T11:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "task_name": "Patient Discharge Assistance",
+      "patient_id": 4,
+      "room": "Room 104",
+      "priority": "Low",
+      "status": "Completed",
+      "assigned_to_nurse_id": 1,
+      "notes": "Help patient with clearance and hand over medication files.",
+      "reminder_time": "2026-05-30T14:00:00.000Z"
+    }
+  ]
+}

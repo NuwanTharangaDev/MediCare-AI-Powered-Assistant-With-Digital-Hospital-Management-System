@@ -1,0 +1,461 @@
+/* 
+  Medicare Hospital Management System - Global Design System
+  Tailormade premium vanilla CSS with custom variables, smooth transitions, and glassmorphism.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Theme Colors (MediCare Classic Blue) */
+  --primary: #0062FF;
+  --primary-hover: #0052D9;
+  --primary-light: #E8F1FF;
+  --primary-light-hover: #D8E7FF;
+  
+  /* Accent Colors */
+  --success: #10B981;
+  --success-light: #ECFDF5;
+  --warning: #F59E0B;
+  --warning-light: #FEF3C7;
+  --error: #EF4444;
+  --error-light: #FEF2F2;
+  --info: #06B6D4;
+  --info-light: #ECFEFF;
+
+  /* Neutrals Darks and Lights */
+  --bg-main: #F8FAFC;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  
+  --text-primary: #1E293B;
+  --text-secondary: #64748B;
+  --text-muted: #94A3B8;
+  
+  --border-light: #E2E8F0;
+  --border-focus: #93C5FD;
+  
+  /* UI Attributes */
+  --font-title: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 20px -2px rgba(148, 163, 184, 0.12);
+  --shadow-lg: 0 10px 30px -5px rgba(148, 163, 184, 0.18);
+  --shadow-hover: 0 12px 28px -4px rgba(0, 98, 255, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --bg-main: #0B0F19;
+  --bg-sidebar: #111827;
+  --bg-card: #1F2937;
+  
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+  
+  --border-light: #374151;
+  --border-focus: #1D4ED8;
+  
+  --shadow-md: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 35px -5px rgba(0, 0, 0, 0.5);
+  --primary-light: rgba(0, 98, 255, 0.15);
+  --primary-light-hover: rgba(0, 98, 255, 0.25);
+}
+
+/* Core Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.home-page {
+  background: #f6f8fb;
+}
+
+.home-page .card:hover {
+  transform: translateY(-3px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Clean Form Controls */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+.input-field:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 98, 255, 0.15);
+}
+
+/* Premium Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+.btn-secondary:hover {
+  background-color: var(--primary-light-hover);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.btn-outline:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-danger {
+  background-color: var(--error);
+  color: white;
+}
+.btn-danger:hover {
+  background-color: #DC2626;
+}
+
+/* Glassmorphism & Cards */
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Badge pills */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+}
+.badge-success { background-color: var(--success-light); color: var(--success); }
+.badge-warning { background-color: var(--warning-light); color: var(--warning); }
+.badge-error { background-color: var(--error-light); color: var(--error); }
+.badge-info { background-color: var(--info-light); color: var(--info); }
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+.animate-slide {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Responsive Grid layouts */
+.hms-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.hms-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.hms-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.role-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.role-selection-grid .roleChooseCard:focus-visible {
+  outline: 3px solid rgba(0, 98, 255, 0.25);
+  outline-offset: 3px;
+}
+
+.about-mvv-card:not(:last-child) {
+  border-right: 1px solid #e2e8f0;
+}
+
+.about-page .card:hover {
+  transform: translateY(-2px);
+}
+
+.register-form .input-field {
+  min-height: 50px;
+  border-radius: 12px;
+  border-color: #dce4ef;
+  background-color: #fff;
+}
+
+.register-form textarea.input-field {
+  min-height: 90px;
+  padding-top: 12px;
+}
+
+@media (max-width: 760px) {
+  .hms-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .role-selection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .heroContent {
+    padding: 0 24px;
+  }
+
+  .about-page .whoWeAreSection,
+  .about-page .mvvSection,
+  .about-page .teamSection,
+  .about-page .emergencySection {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .about-page .whoWeAreGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-page .whoWeAreText,
+  .about-page .whoWeAreImageContainer {
+    min-height: 0;
+  }
+
+  .about-page .about-care-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .statsBar {
+    width: calc(100% - 48px);
+  }
+
+  .about-mvv-card:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .about-page .mvvGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-emergency-banner {
+    display: block !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    padding: 18px 18px 0 !important;
+  }
+
+  .home-emergency-banner > div {
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24) !important;
+    padding: 16px 0 !important;
+    min-height: auto !important;
+  }
+
+  .home-emergency-banner > div:last-child {
+    border-bottom: 0 !important;
+    justify-content: center;
+  }
+
+  .home-nav {
+    padding: 12px 16px !important;
+  }
+
+  .home-nav-links {
+    display: none !important;
+  }
+
+  .home-nav-right {
+    gap: 8px !important;
+  }
+
+  .home-nav-right .phone-badge {
+    display: none !important;
+  }
+
+  .home-footer-grid {
+    display: block !important;
+  }
+
+  .home-footer-grid > div {
+    margin-bottom: 28px;
+  }
+
+  .home-search-panel {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 32px) !important;
+    padding: 10px !important;
+  }
+
+  .home-search-panel > div,
+  .home-search-panel > button {
+    min-width: 0;
+  }
+
+  .home-search-panel > button {
+    width: 100% !important;
+  }
+}
+
+/* Glassmorphic Navigation highlights */
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+.nav-pill:hover {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+.nav-pill.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* System Secure status dot indicator */
+.secure-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--success);
+  box-shadow: 0 0 10px var(--success);
+}
+
+/* Modern Premium Back Button */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+.btn-back:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+  transform: translateX(-3px);
+  box-shadow: var(--shadow-md);
+}
+
