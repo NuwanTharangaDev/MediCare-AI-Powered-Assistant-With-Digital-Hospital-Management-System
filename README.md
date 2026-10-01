@@ -480,9 +480,5 @@ Possible future enhancements include:
 
 A full-stack academic/software project designed to demonstrate modern web development, role-based access, hospital workflows, REST APIs, database management, and AI-assisted user interaction.
 
----
-
-## 📄 License
-This project is intended for educational and academic use.
 
 This project does not currently specify a license. If you intend to make the repository open source, add an appropriate `LICENSE` file and update this section.
